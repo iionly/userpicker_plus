@@ -1,10 +1,11 @@
 <?php
+
 function userpicker_plus_get_group_member_objects($group_guid) {
-	$entities = get_group_members($group_guid, 0);
+	$entities = get_group_members($group_guid, false);
 	$results = array();
 	foreach ($entities as $entity) {
 		$value = $entity->guid;
-		
+
 		$output = elgg_view_list_item($entity, array(
 			'use_hover' => false,
 			'class' => 'elgg-autocomplete-item',

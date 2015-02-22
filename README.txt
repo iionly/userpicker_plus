@@ -1,1 +1,1 @@
-First version for review.
+Adds a group member selection to the user picker.

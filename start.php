@@ -37,16 +37,16 @@ function userpicker_plus_page_handler($page) {
 		case 'group_picker':
 			echo elgg_view('input/groups_for_user',
 				array(
-					'name'=>'group_picker', 
-					'id'=>'userpicker-plus-group-picker',
-					'class'=>'userpicker-plus-group-picker-class', 
-					'user'=>elgg_get_logged_in_user_entity(),
+					'name' => 'group_picker', 
+					'id' => 'userpicker-plus-group-picker',
+					'class' => 'userpicker-plus-group-picker-class', 
+					'user' => elgg_get_logged_in_user_entity(),
 				)
 			);
 			break;
 		default:
-			return FALSE;
+			return false;
 			break;
 	}
-	return TRUE;
+	return true;
 }
